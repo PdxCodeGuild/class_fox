@@ -211,7 +211,7 @@ Don't consider an assignment 'finished' until it's been thoroughly tested. Try m
 
 Once you've finished a lab, or a major portion of a lab, commit and push your work. Unless you have a good reason (building's on fire), only commit working code.
 
-Labs have a soft due date of Friday the week they are assigned, unless otherwised noted by the instructor. They must be completed and turned in 14 days after they are first assigned. If labs are not finished by 14 days after they are first assigned, students will need to meet with the instructor to make an ction plan to get caught up. Failure to make up overdue work may result in academic probation.
+Labs have a soft due date of Friday the week they are assigned, unless otherwise noted by the instructor. They must be completed and turned in 14 days after they are first assigned. If labs are not finished by 14 days after they are first assigned, students will need to meet with the instructor to make an action plan to get caught up. Failure to make up overdue work may result in academic probation.
 
 ### Pair, Group, & Mob Programming
 
@@ -301,7 +301,7 @@ You are encouraged to use resources (docs, online, books, each other) to researc
 
 ### Schedule
 
-The 14 week course is 70 days long, weekdays 9:30 AM to 4:30 PM, with an hour for lunch. The 16 week course is 80 days, weekdays 6 PM to 9:30 PM. We'll take 10 minute breaks every hour-and-a-half.
+The 18 week course is 90 days long, weekdays 6:00 PM to 9:30 PM PT, with breaks at 7:00 and 8:15.
 
 ### Holidays
 
@@ -313,10 +313,11 @@ PDX Code Guild doesn't hold class sessions on the following holidays. Holidays d
 * Christmas Weekend
 * New Years Day
 * Memorial Day
+* Juneteenth
 
 ### Contact
 
-You are welcome to email me at any time: [merritt@pdxcodeguild.com](mailto:merritt@pdxcodeguild.com). We will also have a channel on the [PDX Code Guild Slack](https://portlandcodeguild.slack.com/).
+You are welcome to email me at any time: [anthony@pdxcodeguild.com](mailto:anthony@pdxcodeguild.com). We will also have a channel on the [PDX Code Guild Slack](https://portlandcodeguild.slack.com/).
 
 ### Zoom
 
@@ -336,13 +337,13 @@ That's this! Your main source of information, resources, and assignments for thi
 
 - all lab solutions- organized, tested, commented
 - a capstone which demonstrates proficiency in each of the five areas we cover
-- not absent more than 10% of the class days (7 for the 14-week class, 8 for the 16-week class)
+- not absent more than 10% of the class days (9 for the 18-week class)
 
 ### Attendance & Attention
 
 We try to make room for people's personal lives. We're all adults, it's up to your judgement whether a reason for missing class is justified. However, if you're not present, you won't be engaged and won't be learning. You can quickly fall behind if you miss several classes in succession. The course moves fast, and each topic builds upon the last.
 
-Students can miss 10% of the days at most (7 for the 14-week class, 8 for the 16-week class). The only exceptions are up to five days of excused absence already arranged before the course starts. You can make up classes by coming in additional hours outside of class. You can also make up absences by completing the assignments on your own, and reviewing those solutions with me.
+Students can miss 10% of the days at most (9 for the 18-week class). The only exceptions are up to five days of excused absence already arranged before the course starts. You can make up classes by coming in additional hours outside of class. You can also make up absences by completing the assignments on your own, and reviewing those solutions with me.
 
 All participants should arrive on time. The start of the class is the easiest time to make announcements and give lectures because everyone's synchronized. If you arrive late, I have to remember what I said before you came in and make sure to tell you it, and inevitably something gets lost in the shuffle. It's also disruptive, and waiting for late people punishes people who came on time. **Arriving more than 15 minutes late 3 times counts as an absence.**
 
