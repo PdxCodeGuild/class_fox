@@ -1,5 +1,8 @@
 # class_fox
 
+![fox learning to code](./fox-learning-to-code.png)
+> image generated using DALL-E
+
 ## 2023-03-06 Intensive Python/JavaScript Fullstack Bootcamp
 
 Class is held from **March 06, 2023 to July 14, 2023**
