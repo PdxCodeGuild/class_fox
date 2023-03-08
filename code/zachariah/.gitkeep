@@ -1,0 +1,5 @@
+# this is your .gitkeep file, it makes it so this folder is tracked even though there isn't anything in it 
+# git will keep track of it when its green, but it isn't synced yet! -Zacho
+# use > git status to check on it and > git add file/location/or/folder to track. You can batch add or do singular ones
+# use > git commit -m "Descriptive Commit Message"
+# git push will send all of them to github
