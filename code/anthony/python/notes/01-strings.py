@@ -50,6 +50,8 @@ string_of_animals = " ".join(list_of_animals)
 
 # in keyword
 
+"hello" in "hello world"
+
 # choice = input("Would you like to continue? ")
 # if "y" in choice:
 #     print("Yay!")
