@@ -59,7 +59,8 @@ if num <= 999:
         tens_digit = tens_digit*10
         tens_digit = numbers.get(tens_digit)
        
-        result = hundred_digit+ "  " + "hundred" + " " + tens_digit+ " " + one_digit
+
+        result = hundred_digit+ " " + "hundred" + " " + tens_digit+ " " + one_digit
         print(result)
 
 
