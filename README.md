@@ -30,8 +30,8 @@ Presentation Day: July 14, 2023
 
 | Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
 | ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
-| 01    | Number To Phrase       | 10           |       |                |           |
-| 02    | Blackjack Advice       | 10           |       |                |           |
+| 01    | Number To Phrase       | 10           |     10 Mar    |        17 Mar         |       24 Mar       |
+| 02    | Blackjack Advice       | 10           |     13 Mar    |        20 Mar         |       28 Mar       |
 | 03    | Pick 6                 | 10           |       |                |           |
 | 04    | Credit Card Validation | 5            |        |                |           |
 | 05    | ROT13                  | 5            |        |                |           |
