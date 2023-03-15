@@ -32,7 +32,7 @@ if total == 21:
     print("21 Blackjack!")
 elif total < 15:
     print(f"{total} Hit")
-elif total > 17 and total < 21:
+elif total >= 17 and total < 21:
     print(f"{total} Stay")
 else:
     print("Over 21, already busted!")
