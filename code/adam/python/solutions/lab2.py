@@ -25,6 +25,10 @@ first_card = (input("What's your first card: "))
 second_card = (input("What's your second card: "))
 third_card = (input("What's your third card: "))
 
+if first_card not in blackjack and second_card not in blackjack and third_card not in blackjack:
+    print("Invalid input")
+    exit()
+
 # Total amount of cards adding up all 3 card values
 total = blackjack[first_card] + blackjack[second_card] + blackjack[third_card]
 # if statement giving the user advice(Hit, Stay, Blackjack)
