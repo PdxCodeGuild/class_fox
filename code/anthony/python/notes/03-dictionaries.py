@@ -30,8 +30,8 @@ shopping_list["grapes"] = "1 bunch"
 del shopping_list["grapes"]
 
 
-# if "cereal" in shopping_list:
-#     print(shopping_list['cereal'])
+if "cereal" in shopping_list:
+    print(shopping_list['cereal'])
 
 
 # Get all keys from a dictionary
