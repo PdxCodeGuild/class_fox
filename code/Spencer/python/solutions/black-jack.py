@@ -24,35 +24,45 @@ What's your third card? A
 """
 
 
+hand = input("Enter three cards seperated bhy commas: ")
 
-first_card = input(" What is your first card? ")
-second_card = input(" What is your second card? ")
+
+
+
+
+first_card = input("What is your first card? ")
+second_card = input("What is your second card? ")
 third_card = input("What is your third card?: ")
 
+valid_cards = "A2345678910JQK"
+if first_card in valid_cards and second_card in valid_cards and third_card in valid_cards:
 
-if first_card == "Q" or first_card == "K" or first_card == "J":
-    first_card = 10
-elif first_card == "A":
-    first_card = 1
-if second_card == "J" or second_card == "Q" or second_card == "K":
-    second_card = 10
-elif second_card == "A":
-    second_card = 1
-if third_card == "J" or third_card == "Q" or third_card == "K":
-    third_card = 10
-elif third_card == "A":
-    third_card = 1
 
-total = int(first_card) + int(second_card) + int(third_card)
 
-if total < 17:
-    print("hit")
-elif total > 17 and total < 21:
-    print("stay")
-elif total == 21:
-    print("Black jack!")
+    if first_card == "Q" or first_card == "K" or first_card == "J":
+        first_card = 10
+    elif first_card == "A":
+        first_card = 1
+    if second_card == "J" or second_card == "Q" or second_card == "K":
+        second_card = 10
+    elif second_card == "A":
+        second_card = 1
+    if third_card == "J" or third_card == "Q" or third_card == "K":
+        third_card = 10
+    elif third_card == "A":
+        third_card = 1
+
+    total = int(first_card) + int(second_card) + int(third_card)
+
+    if total < 17:
+        print("hit")
+    elif total >= 17 and total < 21:
+        print("stay")
+    elif total == 21:
+        print("Black jack!")
+    else:
+        print("Already Busted")
+
 else:
-    print("Already Busted")
-
-
+    print("invalid input")
 print(total)
