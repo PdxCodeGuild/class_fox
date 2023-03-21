@@ -23,34 +23,39 @@ For example, the worked out steps would be:
 True Valid!"""
 credit_card_number = [4,5,5,6,7,3,7,5,8,6,8,9,9,8,5,5]
 
-#def credit_card_validator():
+def credit_card_validator():
 
 # Convert the input string into a list of ints
     
 # Slice off the last digit. That is the check digit.
-check_digit = credit_card_number.pop()
-# Reverse the digits.
-credit_card_number.reverse()
+    check_digit = credit_card_number.pop()
+    # Reverse the digits.
+    credit_card_number.reverse()
 
-# Double every other element in the reversed list (starting with the first number in the list).
-for num in range(len(credit_card_number)):
-    if num % 2 == 0:
-        credit_card_number[num] = credit_card_number[num] * 2
+    # Double every other element in the reversed list (starting with the first number in the list).
+    for num in range(len(credit_card_number)):
+        if num % 2 == 0:
+            credit_card_number[num] = credit_card_number[num] * 2
 
-# Subtract nine from numbers over nine.
-    if credit_card_number[num] > 9:
-        credit_card_number[num] = credit_card_number[num] - 9
-#print(credit_card_number)
+    # Subtract nine from numbers over nine.
+        if credit_card_number[num] > 9:
+            credit_card_number[num] = credit_card_number[num] - 9
+    #print(credit_card_number)
 
-# Sum all values.
+    # Sum all values.
 
-credit_card_number = sum(credit_card_number)
+    credit_card_number = sum(credit_card_number)
 
-    
-# Take the second digit of that sum.
+        
+    # Take the second digit of that sum.
 
-credit_card_number = credit_card_number % 10
+    credit_card_number = credit_card_number % 10
+    #could say credit_card_number %= 10
 
-# If that matches the check digit, the whole card number is valid
-if credit_card_number == check_digit:
-    print("The credit card number is valid")
+    # If that matches the check digit, the whole card number is valid
+    if credit_card_number == check_digit:
+        return True
+    else:
+        return False
+result = credit_card_validator()
+print(result)
