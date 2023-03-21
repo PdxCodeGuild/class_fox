@@ -39,9 +39,13 @@ phrase_conversion = {
 }
 
 phrase = input("Enter a phrase to be converted: ")
+conversion = " "
 
 for char in phrase:
     if char in phrase_conversion:
         convert = phrase_conversion[char]
-        print(convert)
+
+        conversion = conversion + phrase_conversion[char]
+print(conversion)
+
 
