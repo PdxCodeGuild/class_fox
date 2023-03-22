@@ -23,11 +23,14 @@ For example, the worked out steps would be:
 True Valid!"""
 credit_card_number = [4,5,5,6,7,3,7,5,8,6,8,9,9,8,5,5]
 
+
 def credit_card_validator():
 
-# Convert the input string into a list of ints
+
+    # Convert the input string into a list of ints
     
-# Slice off the last digit. That is the check digit.
+    # Slice off the last digit. That is the check digit.
+
     check_digit = credit_card_number.pop()
     # Reverse the digits.
     credit_card_number.reverse()

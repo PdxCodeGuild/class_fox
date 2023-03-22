@@ -55,8 +55,8 @@ string_of_animals = " ".join(list_of_animals)
 #     print("Yay!")
 
 
-for char in animals:
-    print(char)
+# for char in animals:
+#     print(char)
 
 
 """

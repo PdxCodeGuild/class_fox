@@ -3,7 +3,6 @@
 # Practice 5: Lists
 # Copy and paste this file into your own "05_lists.py"
 # Fill in the code for each of the functions
-# Run the tests by typing "pytest 05_lists.py"
 
 
 # Even Even
@@ -14,7 +13,21 @@ def is_even(num):
 
 
 def even_even(nums):
-    ...
+    # Loop
+    counter = 0
+    for i in range(0, len(nums)):
+        # Check each number to see if its even
+        if is_even(nums[i]):
+            # Count number of even numbers
+            # counter = counter + 1
+            counter += 1
+            # counter = counter * 4
+            # counter *= 4
+
+    if is_even(counter):
+        return True
+    else:
+        return False
 
 
 print("even_even\t", even_even([5, 6, 2]) == True)
@@ -24,8 +37,9 @@ print("even_even\t", even_even([5, 5, 2]) == False)
 # Reverse
 # Write a function that takes a list and returns a new list with the elements in reverse order
 
-def reverse(nums):
-    ...
+def reverse(nums: list):
+    nums.reverse()
+    return nums
 
 
 print("reverse\t\t", reverse([1, 2, 3]) == [3, 2, 1])
@@ -36,7 +50,14 @@ print("reverse\t\t", reverse([1, 2, 3]) == [3, 2, 1])
 
 
 def common_elements(nums1, nums2):
-    ...
+
+    common = []
+    # loop over listA
+    for i in range(0, len(nums1)):
+        if nums1[i] in nums2:
+            common.append(nums1[i])
+    # return list of common elements
+    return common
 
 
 print("common_elements\t", common_elements(
@@ -48,7 +69,13 @@ print("common_elements\t", common_elements(
 
 
 def combine(nums1, nums2):
-    ...
+    combined = []
+    if len(nums1) == len(nums2):
+        for i in range(0, len(nums1)):
+            combined.append(nums1[i])
+            combined.append(nums2[i])
+
+    return combined
 
 
 print("combine\t\t", combine(['a', 'b', 'c'], [1, 2, 3]) == [
@@ -56,11 +83,23 @@ print("combine\t\t", combine(['a', 'b', 'c'], [1, 2, 3]) == [
 
 
 # Find Pair
-# Given a list of numbers, and a target number, find a pair of numbers from the list that sum to a target number. Optional: return a list of all pairs of numbers that sum to a target value.
+# Given a list of numbers, and a target number,
+# find a pair of numbers from the list that sum to a target number.
+# Optional: return a list of all pairs of numbers that sum to a target value.
 
 
 def find_pair(nums, target):
-    ...
+
+    # nums[0] + nums[1] == target
+    # nums[0] + nums[2] == target
+    # nums[0] + nums[3] == target
+    # nums[1] + nums[2]
+    # nums[1] + nums[3]
+    # nums[2] + nums[3]
+    for i in range(0, len(nums) - 1):
+        for j in range(i + 1, len(nums)):
+            if nums[i] + nums[j] == target:
+                return [nums[i], nums[j]]
 
 
 print("find_pair\t", find_pair([5, 6, 2, 3], 7) == [5, 2])  # [5, 2]
