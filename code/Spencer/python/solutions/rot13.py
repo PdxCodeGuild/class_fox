@@ -9,3 +9,45 @@ Version 2 (optional)
 Allow the user to input the amount of rotation used in the encryption / decryption.
 """
 
+characters = {
+    "a": "n",
+    "b": "o",
+    "c": "p",
+    "d": "q",
+    "e": "r",
+    "f": "s",
+    "g": "t",
+    "h": "u",
+    "i": "v",
+    "j": "w",
+    "k": "x",
+    "l": "y",
+    "m": "z",
+    "n": "a",
+    "o": "b",
+    "p": "c",
+    "q": "d",
+    "r": "e",
+    "s": "f",
+    "t": "g",
+    "u": "h",
+    "v": "i",
+    "w": "j",
+    "x": "k",
+    "y": "l",
+    "z": "m"
+}
+#make a user input
+phrase = input("Enter phrase to be encrypted: ").lower()
+
+# find user input in dictionary
+output_string = ""
+for char in phrase:
+    if char in characters:
+        output_string += characters[char]
+
+print(output_string)
+
+# add 13 to the value
+
+
