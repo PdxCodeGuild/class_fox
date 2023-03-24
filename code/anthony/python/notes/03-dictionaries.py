@@ -2,7 +2,7 @@
 Notes: dictionaries
 Date: Mar 9, 2023
 """
-
+#key:value
 shopping_list = {
     "nuts": "1 pound",
     "eggs": "1 carton",
@@ -14,6 +14,7 @@ shopping_list = {
     1.1: "floats",
     True: "true"
 }
+
 
 # accessing values in a dictionary
 shopping_list['milk']
