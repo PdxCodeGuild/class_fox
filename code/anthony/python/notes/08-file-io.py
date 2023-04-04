@@ -43,7 +43,7 @@ words = contents.split(" ")
 print(f"There are {len(words)} words in {file_name}")
 
 # Figure out how many sentences
-contents = contents.replace("?", ".").replace("!", ".").replace(":", ".")
+contents = contents.replace("?", ".").replace("!", ".").replace(":", ".").replace(";", ".")
 sentences = contents.split(".")
 print(f"There are {len(sentences)} sentences in {file_name}")
 
