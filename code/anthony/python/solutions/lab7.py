@@ -1,12 +1,4 @@
 
-"""
-contacts = [
-    {'name':'matthew', 'favorite fruit':'blackberries', 'favorite color':'orange'},
-    {'name':'sam', 'favorite fruit':'pineapple' ...}
-]
-"""
-
-
 def load_contacts():
     file = open("contacts.csv")
     lines = file.read().split("\n")
@@ -61,9 +53,9 @@ def create_contact(contacts):
 
 # RETRIEVE
 def retrieve_contact(contacts):
-    contact = input("What is the contacts name? ")
+    contact = input("What is the contacts name? ").lower()
     for i in range(len(contacts)):
-        if contact == contacts[i]["name"]:
+        if contact == contacts[i]["name"].lower():
             return contacts[i]
 
     return "Contact not found."
@@ -72,6 +64,11 @@ def retrieve_contact(contacts):
 # UPDATE
 def update_contact(contacts):
     contact = retrieve_contact(contacts)
+
+    if contact == "Contact not found.":
+        print(contact)
+        return contacts
+
     key_to_update = input(
         "What would you like to update? 1) Name. 2) Favorite Color. 3) Favorite Fruit: ")
 
@@ -93,6 +90,9 @@ def update_contact(contacts):
 # DELETE
 def delete_contact(contacts):
     contact = retrieve_contact(contacts)
+    if contact == "Contact not found.":
+        print(contact)
+        return contacts
     contacts.remove(contact)
     return contacts
 
