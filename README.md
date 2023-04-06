@@ -38,10 +38,9 @@ Presentation Day: July 14, 2023
 | Group | Jackalope              | 10           |     21 Mar    |        21 Mar         |       21 Mar       |
 | 06    | ARI                    | 10           |     22 Mar    |        29 Mar         |       05 Apr       |
 | 07    | Contact List           | 25           |     24 Mar    |        31 Mar         |       07 Apr       |
-| 08    | ATM                    | 10           |        |               |           |
-| 09    | Dad Joke API           | 5            |       |               |           |
-| 10    | Quotes API             | 20           |       |               |           |
-| 11    | Mini-Capstone          | 30           |       |               |            |
+| 08    | ATM                    | 10           |     06 APR    |        13 APR         |       20 APR       |
+| 09    | Dad Joke API           | 5            |     03 APR    |        10 APR         |       17 APR       |
+| 10    | Quotes API             | 20           |     04 APR    |        11 APR         |       18 APR       |
 
 
 ## Student Presentations
