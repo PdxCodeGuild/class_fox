@@ -30,18 +30,17 @@ Presentation Day: July 14, 2023
 
 | Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
 | ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
-| 01    | Number To Phrase       | 10           |     10 Mar    |        17 Mar         |       24 Mar       |
-| 02    | Blackjack Advice       | 10           |     13 Mar    |        20 Mar         |       27 Mar       |
-| 03    | Pick 6                 | 10           |     14 Mar    |        21 Mar         |       28 Mar       |
-| 04    | Credit Card Validation | 5            |     16 Mar    |        23 Mar         |       30 Mar       |
-| 05    | ROT13                  | 5            |     20 Mar    |        27 Mar         |       03 Apr       |
+| 01    | Number To Phrase       | 10           |     10 Mar    |        13 Mar         |       20 Mar       |
+| 02    | Blackjack Advice       | 10           |     13 Mar    |        15 Mar         |       22 Mar       |
+| 03    | Pick 6                 | 10           |     14 Mar    |        16 Mar         |       23 Mar       |
+| 04    | Credit Card Validation | 5            |     16 Mar    |        17 Mar         |       24 Mar       |
+| 05    | ROT13                  | 5            |     20 Mar    |        21 Mar         |       28 Mar       |
 | Group | Jackalope              | 10           |     21 Mar    |        21 Mar         |       21 Mar       |
-| 06    | ARI                    | 10           |     22 Mar    |        29 Mar         |       05 Apr       |
-| 07    | Contact List           | 25           |     24 Mar    |        31 Mar         |       07 Apr       |
-| 08    | ATM                    | 10           |        |               |           |
-| 09    | Dad Joke API           | 5            |       |               |           |
-| 10    | Quotes API             | 20           |       |               |           |
-| 11    | Mini-Capstone          | 30           |       |               |            |
+| 06    | ARI                    | 10           |     22 Mar    |        24 Mar         |       31 Mar       |
+| 07    | Contact List           | 25           |     24 Mar    |        29 Mar         |       05 Apr       |
+| 08    | ATM                    | 10           |     06 Apr    |        10 Apr         |       27 Apr       |
+| 09    | Dad Joke API           | 5            |     03 Apr    |        04 Apr         |       11 Apr       |
+| 10    | Quotes API             | 20           |     04 Apr    |        07 Apr         |       14 Apr       |
 
 
 ## Student Presentations
