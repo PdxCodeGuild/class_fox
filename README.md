@@ -26,6 +26,16 @@ M-F 6:00 pm – 9:30 pm PT
 Capstone proposal due: June 12, 2023  
 Presentation Day: July 14, 2023
 
+## HTML/CSS Labs Assigned:
+
+| Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
+| ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
+| 01    | Bio                    | 10           |       |               |             |
+| 02    | Company Landing Page   | 10           |       |               |             |
+| 03    | Blog                   | 20           |       |               |            |
+| 04    | Burrito Order Form     | 10           |       |                |            |
+| 05    | Personal Portfolio     | 20           |        |                |            |
+
 ## Python Labs Assigned:
 
 | Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
