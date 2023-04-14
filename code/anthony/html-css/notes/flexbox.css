@@ -1,0 +1,16 @@
+body{
+    font-family: 'Comfortaa', sans-serif;
+}
+nav {
+    font-family: 'Blaka Hollow', cursive;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(68, 68, 242);
+}
+main {
+    height: 85vh;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+}

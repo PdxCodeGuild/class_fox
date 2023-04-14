@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox inc.</title>
+
+    <style>
+        body {
+            background: rgb(233,111,45);
+            background: -moz-linear-gradient(top, rgb(233,111,45) 0%, rgb(161,35,33) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(233,111,45)), color-stop(100%, rgb(161,35,33)));
+            background: -webkit-linear-gradient(top, rgb(233,111,45) 0%, rgb(161,35,33) 100%);
+            background: -o-linear-gradient(top, rgb(233,111,45) 0%, rgb(161,35,33) 100%);
+            background: -ms-linear-gradient(top, rgb(233,111,45) 0%, rgb(161,35,33) 100%);
+            background: linear-gradient(to bottom, rgb(233,111,45) 0%, rgb(161,35,33) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e96f2d', endColorstr='#a12321', GradientType=0 );
+        }
+        .logo-img {
+            height: 25px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a{
+            color: #4F3742;
+            border: 1px solid #4F3742;
+            padding: .5rem;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+        }
+        .hero img{
+            height: 500px;
+            mix-blend-mode: darken;
+        }
+        .about-us p{
+            text-align: center;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        .cta {
+            width: 400px;
+            border-radius: 12px;
+            box-shadow: 8px 8px 16px 0 black;
+            padding: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="logo">
+            <img class="logo-img" src="assets/logo.jpg" alt="Fox head logo">
+            <h1>Fox Inc</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#cta">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="assets/hero.png" alt="Fox in business attire">
+        </section>
+        <section class="about-us" id="about">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates fugiat, totam quam in maiores doloribus nemo quis at non! Culpa itaque iure molestias ratione aut ut eaque excepturi fugiat eligendi.</p>
+        </section>
+        <section class="cta" id="cta">
+            <input type="text">
+            <button>Get more info</button>
+        </section>
+    </main>
+</body>
+</html>
