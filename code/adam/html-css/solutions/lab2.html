@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        .logo-img{height: 65px;
+        border-radius: 70px;
+        mix-blend-mode: lighten;}
+        
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a{
+            padding: 5px;
+            border: 1.5px solid;
+            text-decoration:none;
+            border-radius: 15px;
+            color: aliceblue;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+        }
+        .hero img{
+            border-radius: 50px;
+            mix-blend-mode:darken;
+            
+
+        }
+        h1{
+            margin: 0;
+            text-align: center;
+            color: aliceblue;
+            font-family: 'Josefin Sans', sans-serif;
+
+        }
+        .about_us p{
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding-top: 2.5rem;
+            padding-bottom: 4.5rem;
+            color: aliceblue;
+            font-family: 'Averia Serif Libre', cursive;
+        }
+        .cta {
+            padding: 3rem;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 10px 10px 20px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        body{
+            background: rgba(28,177,252,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(28,177,252,1) 0%, rgba(158,142,245,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(28,177,252,1)), color-stop(100%, rgba(158,142,245,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(28,177,252,1) 0%, rgba(158,142,245,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(28,177,252,1) 0%, rgba(158,142,245,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(28,177,252,1) 0%, rgba(158,142,245,1) 100%);
+background: radial-gradient(ellipse at center, rgba(28,177,252,1) 0%, rgba(158,142,245,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1cb1fc', endColorstr='#9e8ef5', GradientType=1 );
+        }
+        .about_us h3{
+            display: flex;
+            justify-content: center;
+            padding-top: 1.4rem;
+            color: aliceblue;
+            
+        }
+        
+        footer{
+            padding: 1.5rem;
+        }
+        .guide{
+            display: flex;
+            justify-content: right;
+            padding: 1.5rem;
+            color: aliceblue;
+            gap: 10px;
+            
+
+        }
+        
+         </style>
+</head>
+<body>
+    <header id = "home">
+        <div class="logo">
+            <img class = "logo-img" src="https://www.creativefabrica.com/wp-content/uploads/2020/02/16/Panda-Logo-Graphics-1-2.jpg" alt="Panda logo">
+            <h1>ADM Tech</h1>
+
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#cta">Contact</a>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <img src="https://img.freepik.com/premium-vector/cute-panda-with-phone-cartoon-design_274619-2144.jpg" alt="Panda on phone">
+        </section>
+        <section class="about_us">
+            <h3>About us</h3>
+            <p>ADM Tech was founded on April 13th,2023.
+                The phones from ADM Tech named PNDS are 45% of the populations owned phones and 
+                are currently working on making laptops and desktop. Currently all phones are 
+                out of stock but are projected to be fully in stock by the year of 2024 and beyond.
+            </p>
+        </section>
+        <section class="cta">
+            <input type="text">
+            <button>Sign up</button>
+        </section>
+    </main>
+    <footer>
+    <p>Copyright 2023©</p> 
+    <div class="guide">
+        <p>Guides</p>
+        <p>Terms of Sale</p>
+        <p>Terms of Use</p>
+
+    </div>
+    </footer>
+</body>
+</html>
