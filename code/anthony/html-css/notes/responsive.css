@@ -31,7 +31,7 @@ main {
     height: 85vh;
     overflow: scroll;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 3rem;
@@ -40,6 +40,7 @@ main {
 main article{
     width: 50%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 2rem;
 }
@@ -55,4 +56,22 @@ article p:first-child{
 footer p {
     display: flex;
     justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+
+    p {
+        color: rgb(61, 61, 61);
+    }
+}
+
+@media screen and (max-width: 425px){
+    main article{
+        flex-direction: column;
+        width: 100%;
+    }
 }
