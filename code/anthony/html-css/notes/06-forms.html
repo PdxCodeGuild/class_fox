@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        textarea {
+            resize: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Sign up</h2>
+    <!-- method is type of request e.g. get/post -->
+    <!-- action is location to send form data -->
+    <form method="post" action="https://webhook.site/786f7862-bc45-45be-9d84-4fa4df42465f">
+        <!-- labeling inputs -->
+        <!-- placeholder -->
+        <input name="username" type="text" placeholder="username" required>
+
+        <!-- label with for/id attributes -->
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" required>
+
+        <!-- label with nested input -->
+        <label>
+            Email: 
+            <input name="email" type="email" placeholder="example@mail.com" required>
+        </label>
+
+        <!-- Other input types -->
+        <div>
+            <label for="time">Time</label>
+            <input id="time" type="time">
+    
+            <label for="date">Date</label>
+            <input id="date" type="date">
+    
+            <label for="color">Color</label>
+            <input id="color" type="color">
+    
+            <label for="number">Number</label>
+            <input name="number" id="number" type="number" min="0" max="10" step=".5">
+    
+            <label for="range">
+                0
+                <input id="range" type="range" min="0" max="10" step="1">
+                10
+            </label>
+        </div>
+
+        <label>
+            TextArea
+            <textarea cols="40" rows="20">Some text here</textarea>
+        </label>
+
+        <label>
+            What's your favorite pet?
+            <select>
+                <option value="">Dog</option>
+                <option value="">Cat</option>
+                <option value="">Snake</option>
+                <option value="">Fish</option>
+                <option value="">Bird</option>
+            </select>
+        </label>
+
+        <div>
+            <label>
+                Pepperoni
+                <input type="checkbox" />
+            </label>
+            <label>
+                Pineapple
+                <input type="checkbox" />
+            </label>
+            <label>
+                Spinach
+                <input type="checkbox" />
+            </label>
+            <label>
+                Pinenuts
+                <input type="checkbox" />
+            </label>
+        </div>
+
+        <div>
+            Breadsticks?
+            <label>
+                yes
+                <input type="radio" name="breadsticks">
+            </label>
+            <label>
+                no
+                <input type="radio" name="breadsticks">
+            </label>
+        </div>
+            
+        <button>Sign up</button>
+    </form>
+</body>
+</html>
