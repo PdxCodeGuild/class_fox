@@ -30,9 +30,9 @@ Presentation Day: July 14, 2023
 
 | Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
 | ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
-| 01    | Bio                    | 10           |       |               |             |
-| 02    | Company Landing Page   | 10           |       |               |             |
-| 03    | Blog                   | 20           |       |               |            |
+| 01    | Bio                    | 10           | 11 Apr      |  13 Apr             |  20 Apr           |
+| 02    | Company Landing Page   | 10           | 13 Apr      |  17 Apr             |  24 Apr           |
+| 03    | Blog                   | 20           | 17 Apr      |  21 Apr             |  28 Apr          |
 | 04    | Burrito Order Form     | 10           |       |                |            |
 | 05    | Personal Portfolio     | 20           |        |                |            |
 

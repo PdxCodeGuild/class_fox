@@ -1,0 +1,77 @@
+:root {
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Comfortaa', sans-serif;
+    background: rgba(255,229,224,1);
+    background: -moz-linear-gradient(top, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,229,224,1)), color-stop(100%, rgba(217,145,139,1)));
+    background: -webkit-linear-gradient(top, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5e0', endColorstr='#d9918b', GradientType=0 );
+    min-height: 100vh;
+}
+nav {
+    font-family: 'Blaka Hollow', cursive;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(68, 68, 242);
+    font-size: 1.6rem;
+}
+
+nav a {
+    color: white;
+}
+
+main {
+    min-height: 85vh;
+    height: 85vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+main article{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+article p {
+    font-size: 1.6rem;
+}
+
+article p:first-child{
+    font-size: 4rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+    }
+
+    p {
+        color: rgb(61, 61, 61);
+    }
+}
+
+@media screen and (max-width: 425px){
+    main article{
+        flex-direction: column;
+        width: 100%;
+    }
+}
