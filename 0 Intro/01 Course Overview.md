@@ -240,11 +240,11 @@ For your capstone presentation, you should plan out what features of your projec
 
 ## Rough Timeline
 
-- Week 1, 2, 3, 4: Python
-- Week 5, 6: HTML + CSS + Flask
-- Week 7, 8, 9: Django + Django Rest Framework
-- Week 9, 10, 11: JavaScript + Vue
-- Week 12, 13, 14: Capstone
+- Week 1, 2, 3, 4, 5: Python
+- Week 6, 7: HTML + CSS
+- Week 8, 9, 10, 11: Django
+- Week 11, 12, 13, 14: JavaScript
+- Week 15, 16, 17, 18: Capstone
 
 A more detailed course timeline with all assignments and due dates can be found in the `README.md`.
 
