@@ -26,31 +26,43 @@ M-F 6:00 pm – 9:30 pm PT
 Capstone proposal due: June 12, 2023  
 Presentation Day: July 14, 2023
 
+## Django Labs Assigned:
+
+| Lab | Name          | Points Value | Date Assigned | Due Date | Not Accepted After |
+| --- | ------------- | ------------ | ------------- | -------- | ------------------ |
+| 00  | Polls         |              | 25 Apr        | 26 Apr   | 01 May             |
+| 01  | Todo List     | 20           |               |          |                    |
+| 02  | URL Shortener | 20           |               |          |                    |
+| 03  | Chirp         | 30           |               |          |                    |
+| 04  | Students API  | 10           |               |          |                    |
+| 05  | Pokedex       | 30           |               |          |                    |
+
+
 ## HTML/CSS Labs Assigned:
 
-| Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
-| ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
-| 01    | Bio                    | 10           | 11 Apr      |  13 Apr             |  20 Apr           |
-| 02    | Company Landing Page   | 10           | 13 Apr      |  17 Apr             |  24 Apr           |
-| 03    | Blog                   | 20           | 17 Apr      |  21 Apr             |  28 Apr          |
-| 04    | Burrito Order Form     | 10           |       |                |            |
-| 05    | Personal Portfolio     | 20           |        |                |            |
+| Lab | Name                 | Points Value | Date Assigned | Due Date | Not Accepted After |
+| --- | -------------------- | ------------ | ------------- | -------- | ------------------ |
+| 01  | Bio                  | 10           | 11 Apr        | 13 Apr   | 20 Apr             |
+| 02  | Company Landing Page | 10           | 13 Apr        | 17 Apr   | 24 Apr             |
+| 03  | Blog                 | 20           | 17 Apr        | 21 Apr   | 28 Apr             |
+| 04  | Burrito Order Form   | 10           | 19 Apr        | 21 Apr   | 28 Apr             |
+| 05  | Personal Portfolio   | 20           | 21 Apr        | 25 Apr   | 02 May             |
 
 ## Python Labs Assigned:
 
-| Lab   | Name                   | Points Value | Date Assigned | Due Date              | Not Accepted After |
-| ----- | ---------------------- | ------------ | ------------- | --------------------- | ------------------ |
-| 01    | Number To Phrase       | 10           |     10 Mar    |        13 Mar         |       20 Mar       |
-| 02    | Blackjack Advice       | 10           |     13 Mar    |        15 Mar         |       22 Mar       |
-| 03    | Pick 6                 | 10           |     14 Mar    |        16 Mar         |       23 Mar       |
-| 04    | Credit Card Validation | 5            |     16 Mar    |        17 Mar         |       24 Mar       |
-| 05    | ROT13                  | 5            |     20 Mar    |        21 Mar         |       28 Mar       |
-| Group | Jackalope              | 10           |     21 Mar    |        21 Mar         |       21 Mar       |
-| 06    | ARI                    | 10           |     22 Mar    |        24 Mar         |       31 Mar       |
-| 07    | Contact List           | 25           |     24 Mar    |        29 Mar         |       05 Apr       |
-| 08    | ATM                    | 10           |     06 Apr    |        10 Apr         |       27 Apr       |
-| 09    | Dad Joke API           | 5            |     03 Apr    |        04 Apr         |       11 Apr       |
-| 10    | Quotes API             | 20           |     04 Apr    |        07 Apr         |       14 Apr       |
+| Lab   | Name                   | Points Value | Date Assigned | Due Date | Not Accepted After |
+| ----- | ---------------------- | ------------ | ------------- | -------- | ------------------ |
+| 01    | Number To Phrase       | 10           | 10 Mar        | 13 Mar   | 20 Mar             |
+| 02    | Blackjack Advice       | 10           | 13 Mar        | 15 Mar   | 22 Mar             |
+| 03    | Pick 6                 | 10           | 14 Mar        | 16 Mar   | 23 Mar             |
+| 04    | Credit Card Validation | 5            | 16 Mar        | 17 Mar   | 24 Mar             |
+| 05    | ROT13                  | 5            | 20 Mar        | 21 Mar   | 28 Mar             |
+| Group | Jackalope              | 10           | 21 Mar        | 21 Mar   | 21 Mar             |
+| 06    | ARI                    | 10           | 22 Mar        | 24 Mar   | 31 Mar             |
+| 07    | Contact List           | 25           | 24 Mar        | 29 Mar   | 05 Apr             |
+| 08    | ATM                    | 10           | 06 Apr        | 10 Apr   | 27 Apr             |
+| 09    | Dad Joke API           | 5            | 03 Apr        | 04 Apr   | 11 Apr             |
+| 10    | Quotes API             | 20           | 04 Apr        | 07 Apr   | 14 Apr             |
 
 
 ## Student Presentations
