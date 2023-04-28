@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Note Den</title>
+</head>
+<body>
+    <h1>Welcome to The Note Den</h1>
+    {% for note in notes %}
+    <div>
+        <h3>{{ note.title }}</h3>
+        <p>{{note.summary}}</p>
+        <p>{{note.tag}}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>
