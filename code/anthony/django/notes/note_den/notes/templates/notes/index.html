@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Note Den</title>
+</head>
+<body>
+    <h1>Welcome to The Note Den</h1>
+    <form action="{% url 'note_submission' %}" method="post">
+        {% csrf_token %}
+        <label>
+            Title
+            <input type="text" name="title">
+        </label>
+        <label>
+            Summary
+            <textarea name="summary" cols="30" rows="10"></textarea>
+        </label>
+        <label>
+            Tag
+            <input type="text" name="tag">
+        </label>
+        <button>+ Note</button>
+    </form>
+    {% for note in notes %}
+    <div>
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.summary }}</p>
+        <p>{{ note.tag }}</p>
+        <a href="/delete/{{note.id}}">Delete</a>
+    </div>
+    {% endfor %}
+</body>
+</html>
