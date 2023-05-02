@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1</title>
+</head>
+<body>
+    <h1>Grocery List</h1>
+    <h2>Things to buy</h2>
+    <ul>
+        {% for item in non_purchased_items %}
+            <li>{{ item.name }} - {{ item.quantity }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Purchased Items</h2>
+    <ul>
+        {% for item in purchased_items %}
+            <li>{{ item.name }} - {{ item.quantity }}<a href="{% url 'mark_purchased' item.id %}">Mark as not purchased</a></li>
+            <a href="/delete/{{item.id}}">Delete</a>
+        </div>
+        {% endfor %}
+    </ul>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <label>Quantity:
+            <input type="number" name="quantity">
+        </label>
+        <input type="submit" value="Add">
+    </form>
+    <form action="{% url 'add_item' %}" method="POST">
+        <ul>
+            {% for item in non_purchased_items %}
+                <li>{{ item.name }} - {{ item.quantity }} <a href="{% url 'mark_purchased' item.id %}">Mark as purchased</a></li>
+            {% endfor %}
+        </ul>
+    
+ 
+    <!-- Knowledge check: csrf_token is specific token used to protect 
+        from malicious users trying to steal info -->
+</body>
+</html>
