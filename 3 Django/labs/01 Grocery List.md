@@ -27,7 +27,7 @@ Add the new app to the `INSTALLED_APPS` list in `lab01/settings.py`.
 
 ```python
 INSTALLED_APPS = [
-    'grocery_list.apps.GroceryListConfig',
+    'grocery_list',
     ...
 ]
 ```
