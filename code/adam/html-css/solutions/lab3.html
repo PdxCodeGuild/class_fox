@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            font-size: 15px;
+        }
+        main{
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            
+         }
+         main article{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+         }
+         
+       
+         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;}
+            
+         img{
+            height: 45px;
+            }
+         
+         nav{
+            padding: 5px;
+            border: none;
+            text-decoration:none;
+            display: flex;
+            justify-content: end;
+            gap: 5px;
+            
+            
+         }
+         a{
+            color: white;
+            text-decoration: none;
+         }
+         body{
+            background: rgba(240,160,144,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(240,160,144,1) 0%, rgba(148,10,88,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(240,160,144,1)), color-stop(100%, rgba(148,10,88,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(240,160,144,1) 0%, rgba(148,10,88,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(240,160,144,1) 0%, rgba(148,10,88,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(240,160,144,1) 0%, rgba(148,10,88,1) 100%);
+background: radial-gradient(ellipse at center, rgba(240,160,144,1) 0%, rgba(148,10,88,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0a090', endColorstr='#940a58', GradientType=1 );
+      }
+      article p{
+        font-size: 1.2rem;
+      }
+      
+      
+      
+      @media screen and (max-width:768px) {
+        main{
+            flex-direction: column;
+        }
+      }
+      @media screen and (max-width:425px) {
+        nav{
+            flex-direction:column;
+            text-align: center;
+            
+        }
+        .logo{
+            flex-direction: column;
+            text-align: center;
+        }
+        main article{
+            flex-direction: row;
+            width:100%;
+            text-align: center;
+          }
+          footer{
+            flex-direction: row;
+            text-align: center;
+          }
+        
+     
+        }
+      
+         
+    </style>
+</head>
+<body>
+    <header id="home">
+        <div class="logo">
+            <h1>
+                ESPN Blog
+            </h1>
+        
+            <img src="https://espnpressroom.com/us/photos/galleries/2018/04/02/espn-and-espn-app-logos/app-icon-android-8/" alt="ESPN logo">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#FAQ">FAQ</a>
+            <a href="#stories">Stories</a>
+        </nav>
+        <hr>
+    </header>
+    <main id="stories">
+        <h1>
+            Sports Blog #1
+        </h1>
+        <h5>
+            Posted on January 10th, 2023
+        </h5>
+        <article>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium dicta dolore, repellat quas quisquam harum repellendus vel temporibus dignissimos pariatur aspernatur voluptatibus quod provident, quam labore cupiditate debitis distinctio!</p>
+            <button>
+                Continue reading
+            </button>
+        </article>
+        
+        <h1>
+            Sports Blog #2
+        </h1>
+        <h5>
+            Posted on February 24th, 2023
+        </h5>
+        <article>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. Esse explicabo earum consectetur veritatis aliquid iste perferendis, quae quas, atque vero magnam? Error, neque. Corrupti, quidem dicta necessitatibus est itaque delectus.</p>
+            <button>
+                Continue reading
+            </button>
+        </article>
+        <h1>
+            Sports Blog #3
+        </h1>
+        <h5>
+            Posted on April 17th, 2023
+        </h5>
+        <article>
+            <p>ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, magnam repellendus quasi nostrum adipisci eos saepe incidunt aspernatur vel accusamus nemo porro molestiae culpa omnis possimus! Pariatur provident earum doloremque?.</p>
+            <button>
+                Continue reading
+            </button>
+        </article>
+    
+    </main>
+    <footer>
+        Copyright 2023©
+    </footer>
+</body>
+</html>
