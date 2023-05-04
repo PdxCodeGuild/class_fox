@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burrito Order</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        textarea{
+            resize: none;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        body{
+            height: 100vh;
+            background: rgba(56,242,115,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(56,242,115,1) 0%, rgba(219,126,114,1) 51%, rgba(242,233,233,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(56,242,115,1)), color-stop(51%, rgba(219,126,114,1)), color-stop(100%, rgba(242,233,233,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(56,242,115,1) 0%, rgba(219,126,114,1) 51%, rgba(242,233,233,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(56,242,115,1) 0%, rgba(219,126,114,1) 51%, rgba(242,233,233,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(56,242,115,1) 0%, rgba(219,126,114,1) 51%, rgba(242,233,233,1) 100%);
+background: radial-gradient(ellipse at center, rgba(56,242,115,1) 0%, rgba(219,126,114,1) 51%, rgba(242,233,233,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38f273', endColorstr='#f2e9e9', GradientType=1 );
+;
+
+        }
+        img{
+            border-radius: 13px;
+            width: 5%;
+        }
+        form{
+            padding-left: 1rem;
+        
+        }
+        h3{
+            padding-left: 1rem;
+        }
+        div{
+            padding-top: 1rem;
+        }
+        button{border: solid;
+        border-radius: 10px;
+        
+        }
+        footer{
+            padding:2rem
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="h-16 border flex justify-between items-center bg-green-500">
+        <h1 class="text-red-500 text-3xl px-5">Burrito Order Form</h1>
+        <div class="flex space-x-3 pr-3">
+            <a class="text-red-500" href="">Home</a>
+            <a class="text-red-500" href="">FAQ</a>
+            <a class="text-red-500" href="">New Order</a>
+        </div>
+    </nav>
+    
+      <h3>Sign Up</h3>
+    <form method="post" action="https://webhook.site/92048457-c6da-4a36-b51d-ce05c5f9fbac">
+        <input name="username" type="text" placeholder="username" required>
+        <input password="password" type="password" placeholder="password" required>
+        
+        
+        <div class="order">
+        <h4>Included in your Burrito</h4>
+            <hr>
+        Type of Tortilla:
+            <label>
+                White Flour
+                <input type="radio" name="Tortilla">
+            </label>
+            <label>
+                Wheat Flour
+                <input type="radio" name="Tortilla">
+            </label>
+            <label>
+                Spinach
+                <input type="radio" name="Tortilla">
+            </label>
+            <label>
+                Corn
+                <input type="radio" name="Tortilla">
+            </label>
+        </div>
+        <div>
+            Type of Beans:
+            <label>
+                Black Beans
+                <input type="radio" name="Beans">
+            </label>
+            <label>
+                Pinto Beans
+                <input type="radio" name="Beans">
+            </label>
+        </div>
+        <div>
+            Type of Rice:
+            <label>
+                White Rice
+                <input type="radio" name="Rice">
+            </label>
+            <label>
+                Brown Rice
+                <input type="radio" name="Rice">
+            </label>
+        </div>
+        <div>
+            Type of protein:
+            <label>
+                Carnitas
+                <input type="radio" name="protein">
+            </label>
+            <label>
+                Chicken
+                <input type="radio" name="protein">
+            </label>
+            <label>
+                Sofritas
+                <input type="radio" name="protein">
+            </label>
+            <label>
+                None
+                <input type="radio" name="protein">
+            </label>
+        </div>
+        <div>
+            Additional Ingredients:
+            <label>
+                Sour Cream
+                <input type="checkbox">
+            </label>
+            <label>
+                Cheese
+                <input type="checkbox">
+            </label>
+        </div>
+        <label>
+            Delivery Instructions
+            <textarea cols="30" rows="5" placeholder="Enter Text"></textarea>
+        </label>
+        <button>Order</button>
+    </form>
+    <footer>
+        Copyright 2023©
+    </footer>
+</body>
+</html>
