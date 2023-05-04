@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dongle&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            font-size: 10px;
+        }
+        body {
+            background: rgba(255,175,75,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,175,75,1) 0%, rgba(255,76,100,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,175,75,1)), color-stop(100%, rgba(255,76,100,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,175,75,1) 0%, rgba(255,76,100,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,175,75,1) 0%, rgba(255,76,100,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,175,75,1) 0%, rgba(255,76,100,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,175,75,1) 0%, rgba(255,76,100,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff4c64', GradientType=1 );
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            font-family: 'Dongle', sans-serif;
+            border: 2px dotted rgb(80, 80, 162);
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            font-family: 'Comic Neue', cursive;
+        }
+        article {
+            display: flex;
+            align-items: center;
+            font-family: 'Comic Neue', cursive;
+        }
+        article p{
+            border: 2px dotted rgb(80, 80, 162);
+        }
+        button {
+            width: min-content;
+            border-radius: 45%;
+        }
+
+        @media screen and (max-width: 900px) {
+           article{
+            flex-direction: column;
+           }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>A Day In The Life</h1>
+    </header>
+    <nav>
+        <a href>Home</a>
+        <a href>Adventures</a>
+        <a href>Inspiration</a>
+        <a href>Projects</a>
+    </nav>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nam adipisci tenetur numquam facere modi rem voluptatum deserunt qui! Iste, a necessitatibus provident placeat nihil sed tempora vel reprehenderit repudiandae!</p>
+        <button>View More</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, quam consequatur? Repudiandae aliquid expedita, distinctio quidem error, culpa soluta facere nisi earum beatae nostrum fugit omnis esse consequatur atque dignissimos.</p>
+        <button>View More</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, nisi! Dicta amet nulla voluptates dignissimos, iste eaque quia cumque tempore, ipsam, laboriosam ex blanditiis magni debitis inventore suscipit qui? Excepturi.</p>
+        <button>View More</button>
+    </article>
+    
+</body>
+</html>
