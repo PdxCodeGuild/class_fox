@@ -9,15 +9,19 @@
 <body>
     <h1>Grocery List</h1>
     <h2>Things to buy</h2>
-    <ul>
-        {% for item in non_purchased_items %}
-            <li>{{ item.name }} - {{ item.quantity }}</li>
-        {% endfor %}
-    </ul>
+        <ul>
+            {% for item in non_purchased_items %}
+                <li>
+                {{ item.name }} - {{ item.quantity }} <a href="{% url 'mark_purchased' item.id %}">Mark as purchased</a>
+                </li>
+            {% endfor %}
+        </ul>
     <h2>Purchased Items</h2>
     <ul>
         {% for item in purchased_items %}
-            <li>{{ item.name }} - {{ item.quantity }}<a href="{% url 'mark_purchased' item.id %}">Mark as not purchased</a></li>
+            <li>
+            {{ item.name }} - {{ item.quantity }}<a href="{% url 'mark_purchased' item.id %}">Mark as not purchased</a>
+            </li>
             <a href="/delete/{{item.id}}">Delete</a>
         </div>
         {% endfor %}
@@ -34,11 +38,7 @@
         <input type="submit" value="Add">
     </form>
     <form action="{% url 'add_item' %}" method="POST">
-        <ul>
-            {% for item in non_purchased_items %}
-                <li>{{ item.name }} - {{ item.quantity }} <a href="{% url 'mark_purchased' item.id %}">Mark as purchased</a></li>
-            {% endfor %}
-        </ul>
+    
     
  
     <!-- Knowledge check: csrf_token is specific token used to protect 

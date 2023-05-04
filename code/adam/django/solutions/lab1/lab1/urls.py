@@ -21,6 +21,4 @@ from grocery_list import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('grocery_list.urls')),
-    path('delete/<int:item_id>/', views.delete_item, name='delete_item')
-
 ]
