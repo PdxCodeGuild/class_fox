@@ -241,3 +241,5 @@ urlpatterns = [
 > (Optional) Challenge: Update the `code` field in your table to be a link to the short url. You can use the `url` template tag to generate the url.
 
 > (Optional) Challenge: Add a `last_visited` field to the `Link` model. The `last_visited` field should be a `DateTimeField` with `auto_now=True`, this was each time a count is incremented, the `last_visited` field will be updated with the current time. Update the table in `home.html` to display the `last_visited` field in your table.
+
+> (Optional) Challenge: Add an anchor tag to each row of your table to allow deletion of a link.
