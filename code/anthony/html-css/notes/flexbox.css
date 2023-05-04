@@ -13,7 +13,6 @@ body{
     background: linear-gradient(to bottom, rgba(255,229,224,1) 0%, rgba(217,145,139,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe5e0', endColorstr='#d9918b', GradientType=0 );
     min-height: 100vh;
-
 }
 nav {
     font-family: 'Blaka Hollow', cursive;

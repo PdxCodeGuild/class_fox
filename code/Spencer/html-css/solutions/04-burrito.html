@@ -1,0 +1,151 @@
+<!--
+Lab 4: Burrito Order Form
+Let's create a burrito order form with the following input controls. 
+Try to incorporate some images and semantic elements. Below are some recommended fields, feel free to use your own.
+ You may draw some inspiration from this image.
+
+Once you have your page together, use link at https://webhook.site/ to create a temporary endpoint.
+ Add the attributes action="your-url-here" and method="post" to your form. 
+ Then fill out your form and submit the data. You should see an "ok" response. 
+ You can then check your bin and look at the request's body. 
+ Make sure all the relevant data is present to ensure your form is working.
+
+Name (text input)
+Password (password input)
+Tortilla (radio buttons)
+White Flour
+Wheat Flour
+Spinach
+Corn
+Rice (radio buttons)
+White Rice
+Brown Rice
+Beans (radio buttons)
+Black Beans
+Pinto Beans
+Protein (radio buttons)
+Carnitas
+Chicken
+Sofritas
+None
+Additional Ingredients (check boxes)
+Cheese
+Sour Cream
+Delivery Instructions (textarea)
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Burrito Factory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .login {
+            border: 1px sold black;
+        }
+        button {
+            border: 1px sold black;
+        }
+        .delivery {
+            border: 1px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <form method="post" action="https://webhook.site/786f7862-bc45-45be-9d84-4fa4df42465f">
+
+    <nav class="h-20 border flex justify-between items-center bg-blue-600">
+        <h1 class="text-white">The Burrito Factory</h1>
+        
+        <div>
+            <a class="text-white" href="">Home</a>
+            <a class="text-white" href="">Locations</a>
+            <a class="text-white" href="">Sign up</a>
+            <a class="text-white" href="">Contact</a>
+        </div>
+    </nav>
+    <h2>Login</h2>
+    <div class="border-1"><input name="username" type="text" placeholder="username" required>
+    <input name="password" id="password" placeholder="password" required>
+    <button>Sign in</button>
+    </div>
+
+    <div>
+        Tortilla:
+        <label>
+            White flour
+            <input type="radio" name="tortilla">
+        </label>
+        <label>
+            Wheat Flour
+            <input type="radio" name="tortilla">
+        </label>
+        <label>
+            Spinach
+            <input type="radio" name="tortilla">
+        </label>
+        <label>
+            Corn
+            <input type="radio" name="tortilla">
+        </label>
+    </div>
+    
+    <div>
+        Beans:
+        <label>
+            Black Beans
+            <input type="radio" name="Beans">
+        </label>
+        <label>
+            Pinto Beans
+            <input type="radio" name="Beans">
+        </label>
+    </div>
+
+    <div>
+        Protein:
+        <label>
+            Carnitas
+            <input type="radio" name="Protien">
+        </label>
+        <label>
+            Chicken
+            <input type="radio" name="Protien">
+        </label>
+        <label>
+            Sofritas
+            <input type="radio" name="Protien">
+        </label>
+        <label>
+            None
+            <input type="radio" name="Protien">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            Cheese
+            <input type="checkbox">
+        </label>
+        <label>
+            Sour Cream
+            <input type="checkbox">
+        </label>
+    </div>
+
+    <div>
+    <h3>Delivery Instrictions</h3>
+    <label class = "delivery">
+            
+            <textarea cols="40" rows="20">... </textarea>
+        </label>
+    </div>
+</form>
+</body>
+</html>
