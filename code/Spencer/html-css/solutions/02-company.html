@@ -1,0 +1,126 @@
+<!--
+Lab 2: Company Home
+Pick an industry and create the landing page for a hypothetical company, filling in as much 
+detail as possible. Use CSS flexbox to help create your desired layout. Browse the internet 
+for existing company pages and imitate as much as you can.
+
+Requirements:
+Create an HTML file with a proper structure, including a head and body section.
+
+Include CSS. You can do this either in the head section, link to a separate CSS file containing the 
+styles for your homepage, or, in the head section include a style tag for your css styles.
+
+Design the homepage layout using Flexbox, including:
+
+A header with the company logo and navigation menu.
+A main section showcasing the company's products or services using a flexbox layout.
+A call-to-action section, encouraging visitors to learn more, sign up, or purchase.
+A footer with copyright information and useful links.
+Apply appropriate typography, colors, and styling to make the homepage visually 
+appealing and consistent with the fictional company's branding.
+
+Use semantic HTML elements (e.g., header, nav, section, article, and footer) for better accessibility and SEO.
+
+Ensure that the design is accessible to users with disabilities by using proper 
+alternative text for images and following other accessibility best practices.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Spencer Disigns</title>
+    <style>.logo {
+        height: 75px;
+    }
+
+    body {
+        background: rgba(212,228,239,1);
+background: -moz-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(212,228,239,1)), color-stop(100%, rgba(134,174,204,1)));
+background: -webkit-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -o-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: -ms-linear-gradient(top, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+background: linear-gradient(to bottom, rgba(212,228,239,1) 0%, rgba(134,174,204,1) 100%);
+min-height: 100vh;
+
+    }
+    h1 {
+        font-family: 'Chalkduster' ;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer p {
+    display: flex;
+    justify-content: center;
+    }
+    nav a{
+            color: #4F3742;
+            border: 1px solid #4F3742;
+            padding: .5rem;
+            border-radius: 8px;
+            text-decoration: none;
+    }
+    main p{
+            text-align: center;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+    }
+    
+    .cta {
+            width: 400px;
+            border-radius: 12px;
+            box-shadow: 8px 8px 16px 0 black;
+            padding: 2rem;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }  
+    .header {
+        display: flex;
+        font-family: 'Chalkduster' ;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="header">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNSGneSHAdvcRNwcwK_maLbaogoipLbR7jng&usqp=CAU" alt="image of ring">
+            <H1>Iron Spencer Designs</H1>
+        </div>
+            <div>
+            
+                <a href="#">Home</a>
+                <a href="#">Rings</a>
+                <a href="#">Earrings</a>
+                <a href="#">Bracelets</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+        <main>
+            <p>Hello, My name is Spencer and I’m a metalsmith, based in Portland, OR. 
+            I’m the designer and maker of one of a kind, handmade wearable works of art. 
+            Since 2012 I have been studying, learning and refining my knowledge of metal arts. 
+
+            My work is driven by the process of creating. From a young child I have been drawn to unique, 
+            and simple organic designs which are an integral part of the pieces I create. 
+            My pieces are almost entirely one of a kind and they evolve, change and grow 
+            depending how I am feeling and the inspiration that comes to me
+            </p>
+        </main>
+        <section class="cta">
+            <input type="text">
+            <button>Request a commission</button>
+        </section>
+        <footer>
+            <p>Copyright 2023</p>
+        </footer>
+</body>
+</html>

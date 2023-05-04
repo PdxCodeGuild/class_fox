@@ -1,0 +1,92 @@
+<!--
+# Lab 1: Bio
+
+Write up a short bio webpage for someone or something. It can be about a celebrity, a fictionary character, a place, a species, etc. Check out the [examples](https://github.com/PdxCodeGuild/class_bumble_bee/tree/main/2%20HTML%20%2B%20CSS/labs/images)
+
+## Part 1
+
+- A written introduction
+- A link to a Wikipedia article
+- A picture of them
+- A list of places where they've lived
+- A quote from them
+
+## Part 2
+
+- Center the entire content of the body
+- Modify the padding and margins on your paragraphs to look better
+- Pick a color scheme and modify the background, body text, and link text color.
+- Add a rounded border to the picture.
+- Change the bullet points on the list of places.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: EBBAB9;
+        }
+        p {
+            color: rgb(36, 36, 36);
+            margin-left: auto;
+            margin-right: auto;
+            width: 600px;
+            text-align: center;
+        }
+        h1  {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        img {
+            width: 35%;
+            border-radius: 9999px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        body {
+            background-color: grey;
+        }
+        
+        ul {
+             list-style: "🦴";
+            margin-left: auto;
+            margin-right: auto;
+            width: 130px;
+        }
+        q { 
+            width: 35%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            text-align: center;     
+           }
+    </style>
+</head>
+<body>
+    <h1>Mr. Harold Haruki</h1>
+
+    <img src="https://th.bing.com/th/id/OIP.0F9RJ9hZWnryC_W7EOOO0QEgDY?w=260&h=195&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="A picture of Harold Haruki in a park.">
+    <hr>
+    <p>Mr. Harlod Haruki was born on September 25th, 2019. He is a wooly <a href="https://en.wikipedia.org/wiki/Shiba_Inu#Temperament">Shiba Inu</a>. He has resided in Portland,
+        Oregon his enire life.
+    </p>
+
+    <h4>Some of his favorite things to do are:</h4>
+    <ul>
+        <li>Chase birds</li>
+        <li>Dig in the sand</li>
+        <li>Ignore you when you call his name</li>
+        <li>Eat snacks</li>
+        <li>Take Naps</li>
+    </ul>
+
+    <q>I really only get one treat while you get an entire bag of chips? - Harold Haruki</q>
+</body>
+</html>
