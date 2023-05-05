@@ -47,6 +47,13 @@
         color: lavender;
 
       }
+      .delete{
+        color: greenyellow;
+        text-decoration: none;
+        border: 1.5px solid;
+        border-radius: 8px;
+        
+      }
       
       
     </style>
@@ -60,15 +67,18 @@
         <th>URL</th>
         <th> Date </th>
         <th> Clicks </th>
+        <th>Last Visited</th>
       </tr>
     </thead>
     <tbody>
       {% for link in all_links %}
       <tr>
-        <td class="code">{{ link.code }}</td>
+        <td class="code"><a href="{% url 'redirect_link' %}">{{link.code}}</a></td> 
         <td class="url">{{ link.url }}</td>
         <td class="date">{{ link.created_at }}</td>
         <td class="click">{{ link.clicks }}</td>
+        <td class="last_visited">{{ link.last_visited }}</td>
+       <td><a class="delete" href="{%url 'delete_link' link.id %}">Delete</a></td>
       </tr>
       {% endfor %}
     </tbody>

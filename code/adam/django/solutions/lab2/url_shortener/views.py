@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Link
+from django.urls import reverse
 import random
 import string
 
@@ -45,3 +46,8 @@ def redirect_link(request, code):
   link.save()
   return redirect(link.url)
 
+def delete_link(request, link_id):
+    url_link_delete = Link.objects.get(id=link_id)
+    url_link_delete.delete()
+
+    return redirect('home')
