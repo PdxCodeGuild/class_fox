@@ -26,13 +26,17 @@
         padding-left: 30px;
       }
       h1{
-        padding-left: 30px;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+        padding-left: 10px;
         color: lavender;
 
       }
       body{
         height: 100vh;
         background-color:lightskyblue;
+        margin: auto;
       
         
       }
@@ -52,7 +56,9 @@
         text-decoration: none;
         border: 1.5px solid;
         border-radius: 8px;
-        
+        }
+      .code_link{
+        color: greenyellow;
       }
       
       
@@ -73,7 +79,7 @@
     <tbody>
       {% for link in all_links %}
       <tr>
-        <td class="code"><a href="{% url 'redirect_link' %}">{{link.code}}</a></td> 
+        <td class="code"><a class="code_link" href="{% url 'redirect_link' link.code %}">{{link.code}}</a></td> 
         <td class="url">{{ link.url }}</td>
         <td class="date">{{ link.created_at }}</td>
         <td class="click">{{ link.clicks }}</td>
