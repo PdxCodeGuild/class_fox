@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white">
+    <h1 class="text-3xl">URL Shortener</h1>
+
+    <h2>Add new link</h2>
+    <form action="{% url 'new_link' %}" method="post">
+        {% csrf_token %}
+        <label>
+            URL:
+            <input type="url" name="url" id="url" placeholder="https://google.com" required>
+        </label>
+        <input type="submit" value="Add" />
+    </form>
+
+
+    <table class="bg-slate-600">
+        <thead class="bg-slate-500">
+            <tr>
+                <th>Code</th>
+                <th>URL</th>
+                <th>Date Created</th>
+                <th>Visits</th>
+                <th>Last Visited</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for link in links %}
+            <tr>
+                <td class="border px-2">
+                    <a href="{% url 'redirect_link' link.code %}" target="_blank">
+                        {{link.code}}
+                    </a>
+                </td>
+                <td class="border px-2">{{link.url}}</td>
+                <td class="border px-2">{{link.created_at}}</td>
+                <td class="border px-2">{{link.counter}}</td>
+                <td class="border px-2">{{link.last_visited}}</td>
+                <td class="border px-2">
+                    <a class="text-red-600" href="{% url 'delete_link' link.id %}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
