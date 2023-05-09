@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Link
-from django.urls import reverse
+
 import random
 import string
 
@@ -8,8 +8,7 @@ import string
 
 def home(request):
     # TODO: get all the links from the database
-    all_links = Link.objects.all()
-
+    all_links = Link.objects.all().order_by('-clicks')
      # TODO: create a context dictionary to pass to the template
     context = {
         "all_links": all_links

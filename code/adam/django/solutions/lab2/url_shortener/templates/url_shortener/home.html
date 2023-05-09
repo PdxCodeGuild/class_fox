@@ -71,7 +71,7 @@
       <tr>
         <th>Code</th>
         <th>URL</th>
-        <th> Date </th>
+        <th> Date Created</th>
         <th> Clicks </th>
         <th>Last Visited</th>
       </tr>
@@ -79,7 +79,7 @@
     <tbody>
       {% for link in all_links %}
       <tr>
-        <td class="code"><a class="code_link" href="{% url 'redirect_link' link.code %}">{{link.code}}</a></td> 
+        <td class="code"><a class="code_link" href="{% url 'redirect_link' link.code %}" target="_blank">{{link.code}}</a></td> 
         <td class="url">{{ link.url }}</td>
         <td class="date">{{ link.created_at }}</td>
         <td class="click">{{ link.clicks }}</td>
