@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    
+    <nav class="container">
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+        </ul>
+        {% if request.user.is_authenticated %}
+        <ul>
+            <li>
+                <a href="">Logout</a>
+            </li>
+        </ul>
+        {% else %}
+        <ul>
+            <li>
+                <a href="{% url 'login' %}">Login</a>
+            </li>
+            <li>
+                <a href="{% url 'signup' %}">Signup</a>
+            </li>
+        </ul>
+        {% endif %}
+        
+    </nav>
+    <main>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+</body>
