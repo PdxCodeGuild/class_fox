@@ -1,0 +1,29 @@
+{% extends 'pokemon/base.html' %}
+
+{% block title %}
+{{request.user.username}} Teams
+{% endblock title %}
+
+{% block content %}
+
+<form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="team-name">
+        <input type="text" name="team-discription" placeholder="Team Description">
+        <button>Create Team</button>
+</form>
+
+{% for team in teams %}
+<h5><a href="{% url 'team_detail' team.id %}">{{ team.name }}</a></h5>
+<ul>
+    {% for pokemon in team.pokemon.all %}
+        <li>{{ pokemon.name }}</li>
+    {% endfor %}
+</ul>
+
+{% empty %}
+<p>You have no teams...</p>
+
+{% endfor %}
+
+{% endblock %}
