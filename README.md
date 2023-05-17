@@ -33,9 +33,8 @@ Presentation Day: July 14, 2023
 | 00  | Polls         |              | 25 Apr        | 26 Apr   | 01 May             |
 | 01  | Todo List     | 20           | 01 May        | 05 May   | 12 May             |
 | 02  | URL Shortener | 20           | 03 May        | 08 May   | 15 May             |
-| 03  | Chirp         | 30           |               |          |                    |
-| 04  | Students API  | 10           |               |          |                    |
-| 05  | Pokedex       | 30           |               |          |                    |
+| 03  | Blog          | 20           | 09 May        | 15 May   | 22 May             |
+| 04  | Chirp         | 30           | 16 May        | 22 May   | 30 May             |
 
 
 ## HTML/CSS Labs Assigned:
