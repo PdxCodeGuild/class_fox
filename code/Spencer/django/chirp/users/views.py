@@ -14,6 +14,7 @@ def signup(request):
         
     else:
         form = UserCreationForm()
+        return render(request, 'users/signup.html')
 
 def login(request):
     if request.method == 'POST':
@@ -23,6 +24,7 @@ def login(request):
             return redirect('home')
     else:
         form = AuthenticationForm()
+        return render(request, 'users/login.html')
 
 
 def logout(request):
