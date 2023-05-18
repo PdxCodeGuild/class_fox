@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'todos/_head.html' with title="Login" %}
+<body>
+    {% include 'todos/_navbar.html' %}
+    <h1>Login</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form}}
+        <button>Login</button>
+    </form>
+</body>
+</html>
