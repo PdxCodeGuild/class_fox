@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.author}} Chirp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+</head>
+<body>
+    <nav class='container'>
+        <ul>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+        </ul>
+        {% if request.user.is_authenticated %}
+        <ul>
+            <li>
+                <a href="">Logout</a>
+            </li>
+        </ul>
+        {% else %}
+        <ul>
+            <li>
+                <a href="{% url 'login' %}">Login</a>
+            </li>
+            <li>
+                <a href="{% url 'signup'%}">Signup</a>
+            </li>
+        </ul>
+        {% endif %}
+    </nav>
+    <div class="container">
+        <h3>{{post.author}} Chirp</h3>
+        <p>{{ post.content }}</p>
+        {% if post.author == request.user %}
+        <div>
+            <a role="button" class="outline contrast" href="{% url 'edit-post' post.id %}">Edit</a>
+            <a role="button" class="outline warning" href="{% url 'delete-post' post.id %}">Delete</a>
+        </div>
+        {% endif %}
+    </div>  
+</body>
+</html>

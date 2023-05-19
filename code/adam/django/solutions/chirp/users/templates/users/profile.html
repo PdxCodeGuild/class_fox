@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{user.username}} Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        img{
+            height: 65px;
+            border-radius: 70px;
+            mix-blend-mode: lighten;
+        }
+        footer{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <img src="data:image/png;base64,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" alt="Chirp logo">
+            <li>
+                <a href="{% url 'home'%}">Home</a>
+            </li>
+        </ul>
+        {% if request.user.is_authenticated %}
+        <ul>
+            <li>
+                <a href="">Logout</a>
+            </li>
+        </ul>
+        {% else %}
+        <ul>
+            <li>
+                <a href="{% url 'login' %}">Login</a>
+            </li>
+            <li>
+                <a href="{% url 'signup' %}">Signup</a>
+            </li>
+        </ul>
+        {% endif %}
+    </nav>
+   
+    <h1>{{ user.username }} Profile</h1>
+    {% for post in posts %}
+    <article>
+        <h3>@{{ post.author }}</h3>
+        <p> {{ post.content }}</p>
+        <p> {{post.created_at }} </p>
+    </article>
+    {% endfor %}
+    <footer>
+        <p>Copyright©</p>
+        <p>Terms Of Service</p>
+        <p>Privacy Policy</p>
+        <p>Contact Us:
+            <a href="mailto:chirpdevteam@example.com">chirpdevteam@example.com</a></p>
+          
+    </footer>
+</body>
+</html>
