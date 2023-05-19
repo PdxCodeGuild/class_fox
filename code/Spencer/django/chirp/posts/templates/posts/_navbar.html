@@ -1,10 +1,19 @@
+<style>
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+</style>
 <nav>
 
     <ul>
         <li><a href="{% url 'home' %}">Home</a></li>
+        {% if request.user.is_authenticated %}
+        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% else %}
         <li><a href="{% url 'login' %}">Login</a></li>
         <li><a href="{% url 'signup' %}">Signup</a></li>
-        <li><a href="{% url 'logout' %}">Logout</a></li>
+        {% endif %}
 
     </ul>
 

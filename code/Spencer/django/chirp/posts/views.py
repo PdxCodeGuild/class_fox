@@ -3,8 +3,12 @@ from .models import posts
 
 
 def home(request):
-    post = posts.objects.all()
-    return render(request, 'posts/home.html',)
+    post = posts.objects.all().order_by('-id')
+    context = {
+        "posts": post
+
+    }
+    return render(request, 'posts/home.html', context)
 
 
 
@@ -22,7 +26,7 @@ def post_create(request):
                 author=request.user
             )
 
-            return redirect('post-detail', pk=post.pk)
+            return redirect('home', pk=post.pk)
         else:
             return redirect('login')
 
