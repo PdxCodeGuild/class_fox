@@ -26,6 +26,18 @@ M-F 6:00 pm – 9:30 pm PT
 Capstone proposal due: June 12, 2023  
 Presentation Day: July 14, 2023
 
+## JavaScript Labs Assigned:
+
+| Lab   | Name      | Points Value | Date Assigned | Due Date | Not Accepted After |
+| ----- | --------- | ------------ | ------------- | -------- | ------------------ |
+| 01A   | Pick 3    | 10           |               |          |                    |
+| 02A   | Pick 3    | 10           |               |          |                    |
+| 03A   | Pick 3    | 10           |               |          |                    |
+| 01B   | Pick 3    | 10           |               |          |                    |
+| 02B   | Pick 3    | 10           |               |          |                    |
+| 03B   | Pick 3    | 10           |               |          |                    |
+| Group | Todo List | 10           |               |          |                    |
+
 ## Django Labs Assigned:
 
 | Lab | Name          | Points Value | Date Assigned | Due Date | Not Accepted After |

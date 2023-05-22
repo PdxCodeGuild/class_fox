@@ -1,0 +1,13 @@
+
+body {
+    background-color: cadetblue;
+}
+
+.poke-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.poke-container > div {
+    padding: 2rem;
+}
