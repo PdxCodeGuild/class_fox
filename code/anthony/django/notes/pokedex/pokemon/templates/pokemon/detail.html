@@ -1,0 +1,28 @@
+{% extends 'pokemon/base.html' %}
+
+{% block title %}
+{{ pokemon.name }}
+{% endblock %}
+
+{% block content %}
+<h2>{{ pokemon.name }}</h2>
+<p>Number: {{ pokemon.number }}</p>
+<img src="{{ pokemon.image_url }}" alt="{{ pokemon.name }}">
+<p>Height: {{ pokemon.height }}</p>
+<p>Weight: {{ pokemon.weight }}</p>
+
+<div>
+    Types:
+    {% for type in pokemon.types.all %}
+        <span>{{ type.name }}</span>
+    {% endfor %}
+</div>
+
+{% for ability in pokemon.abilities.all %}
+    <h5>{{ ability.name }}</h5>
+    <p>{{ ability.effect }}</p>
+{% endfor %}
+
+
+
+{% endblock %}
