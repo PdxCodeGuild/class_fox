@@ -30,6 +30,7 @@ Presentation Day: July 14, 2023
 
 | Lab   | Name      | Points Value | Date Assigned | Due Date | Not Accepted After |
 | ----- | --------- | ------------ | ------------- | -------- | ------------------ |
+| Exercise 1   | Fundamentals | 10 |  23 May       | 25 May   |  01 Jun            |
 | 01A   | Pick 3    | 10           |               |          |                    |
 | 02A   | Pick 3    | 10           |               |          |                    |
 | 03A   | Pick 3    | 10           |               |          |                    |
