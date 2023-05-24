@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <style>
+      th{
+        font-size: 15px;
+        color: lavender;
+
+      }
+      .url{
+        padding-left: 30px;
+      }
+      
+      .click{
+        padding-left: 30px;
+      }
+      
+      .date{
+        padding-left: 30px;
+      }
+      .code{
+        padding-left: 30px;
+      }
+      h1{
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+        padding-left: 10px;
+        color: lavender;
+
+      }
+      body{
+        height: 100vh;
+        background-color:lightskyblue;
+        margin: auto;
+      
+        
+      }
+      tbody{
+        color: lavender;
+      }
+      h2{
+        color: lavender;
+
+      }
+      label{
+        color: lavender;
+
+      }
+      .delete{
+        color: greenyellow;
+        text-decoration: none;
+        border: 1.5px solid;
+        border-radius: 8px;
+        }
+      .code_link{
+        color: greenyellow;
+      }
+      
+      
+    </style>
+</head>
+<body>
+    <h1>Links</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>URL</th>
+        <th> Date Created</th>
+        <th> Clicks </th>
+        <th>Last Visited</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for link in all_links %}
+      <tr>
+        <td class="code"><a class="code_link" href="{% url 'redirect_link' link.code %}" target="_blank">{{link.code}}</a></td> 
+        <td class="url">{{ link.url }}</td>
+        <td class="date">{{ link.created_at }}</td>
+        <td class="click">{{ link.clicks }}</td>
+        <td class="last_visited">{{ link.last_visited }}</td>
+       <td><a class="delete" href="{%url 'delete_link' link.id %}">Delete</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  
+  <h2>Add a Link</h2>
+  <form action="{% url 'add_link' %}" method="POST">
+    {% csrf_token %}
+    <label>
+      URL:
+      <input type="text" id="url" name='url'>
+    </label>
+    <input type="submit" value="Add">
+  </form>
+</body>
+</html>

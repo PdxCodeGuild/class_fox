@@ -26,6 +26,19 @@ M-F 6:00 pm – 9:30 pm PT
 Capstone proposal due: June 12, 2023  
 Presentation Day: July 14, 2023
 
+## JavaScript Labs Assigned:
+
+| Lab   | Name      | Points Value | Date Assigned | Due Date | Not Accepted After |
+| ----- | --------- | ------------ | ------------- | -------- | ------------------ |
+| Exercise 1   | Fundamentals | 10 |  23 May       | 25 May   |  01 Jun            |
+| 01A   | Pick 3    | 10           |               |          |                    |
+| 02A   | Pick 3    | 10           |               |          |                    |
+| 03A   | Pick 3    | 10           |               |          |                    |
+| 01B   | Pick 3    | 10           |               |          |                    |
+| 02B   | Pick 3    | 10           |               |          |                    |
+| 03B   | Pick 3    | 10           |               |          |                    |
+| Group | Todo List | 10           |               |          |                    |
+
 ## Django Labs Assigned:
 
 | Lab | Name          | Points Value | Date Assigned | Due Date | Not Accepted After |
@@ -33,9 +46,8 @@ Presentation Day: July 14, 2023
 | 00  | Polls         |              | 25 Apr        | 26 Apr   | 01 May             |
 | 01  | Todo List     | 20           | 01 May        | 05 May   | 12 May             |
 | 02  | URL Shortener | 20           | 03 May        | 08 May   | 15 May             |
-| 03  | Chirp         | 30           |               |          |                    |
-| 04  | Students API  | 10           |               |          |                    |
-| 05  | Pokedex       | 30           |               |          |                    |
+| 03  | Blog          | 20           | 09 May        | 15 May   | 22 May             |
+| 04  | Chirp         | 30           | 16 May        | 22 May   | 30 May             |
 
 
 ## HTML/CSS Labs Assigned:

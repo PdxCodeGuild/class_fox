@@ -1,0 +1,28 @@
+{% extends 'pokemon/base.html' %}
+
+{% block title %}
+{{team.name}}
+{% endblock %}
+
+{% block content %}
+<h1>{{ team.name }}</h1>
+<p>{{ team.description }}</p>
+<h5>Created by: {{ team.user.username }}</h5>
+
+<div class="poke-container">
+    {% for poke in team.pokemon.all %}
+    <div>
+        <a href="{% url 'pokemon_detail' poke.id %}">
+            <h3>{{ poke.number }} - {{ poke.name }}</h3>
+        </a>
+        <img src="{{ poke.image_url }}" alt="{{ poke.name }}">
+        <div>
+            {% for type in poke.types.all %}
+            <p style="color: {{type.color}};">{{ type.name }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

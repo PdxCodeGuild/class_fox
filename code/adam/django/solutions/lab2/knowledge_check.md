@@ -1,0 +1,1 @@
+1. The difference between makemigrations and migrate commands is that makemigrations is responsible for creating the new migrations while migrate command is responsible for applying and unapplying those changes made to models.py

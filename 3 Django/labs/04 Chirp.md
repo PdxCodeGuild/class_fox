@@ -1,4 +1,4 @@
-# Lab 3: Chirp (Twitter Clone)
+# Lab 4: Chirp (Twitter Clone)
 
 **Write a simple MVP (minimum viable product) clone of Twitter!**
 

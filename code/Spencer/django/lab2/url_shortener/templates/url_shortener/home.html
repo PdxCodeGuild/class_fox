@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Url Shortener</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Code</th>
+          <th>URL</th>
+          <th>Created date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for link in links %}
+        <tr>
+          <td>{{ link.code }}</td>
+          <td>{{ link.url }}</td>
+          <td>{{ link.created_at}}</td>
+          <td>{{link.counter}}</td>
+          <td>{{link.last_visited}}</td>
+          <td><a href="{% url 'delete_item' link.id %}">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <h2>Add a Link</h2>
+  <form action="{% url 'add_link' %}" method="post">
+    {% csrf_token %}
+    <label>
+      URL
+      <input type="text" name="url" id="url">
+    </label>
+    <input type="submit" value="Add">
+  </form>
+</body>
+</html>

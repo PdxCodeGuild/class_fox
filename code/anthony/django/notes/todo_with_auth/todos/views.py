@@ -1,21 +1,20 @@
 from django.shortcuts import render, redirect
 from .models import Todo, Priority
 from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
 
 
+@login_required()
 def home(request):
-    if request.user.is_authenticated:
-        todos = Todo.objects.filter(
-            is_completed=False, user=request.user).order_by('-priority__value')
-        priorities = Priority.objects.all()
+    todos = Todo.objects.filter(
+        is_completed=False, user=request.user).order_by('-priority__value')
+    priorities = Priority.objects.all()
 
-        context = {
-            "todos": todos,
-            "priorities": priorities
-        }
-        return render(request, 'todos/home.html', context)
-    else:
-        return redirect('login')
+    context = {
+        "todos": todos,
+        "priorities": priorities
+    }
+    return render(request, 'todos/home.html', context)
 
 
 def create_todo(request):
