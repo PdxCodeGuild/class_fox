@@ -9,10 +9,21 @@
         {% block title %}
         {% endblock %}
     </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        h1 { 
+            text-align: center;
+            font-family: 'Lucida Handwriting';
+            padding: .5rem;
+            color: #3399FF;
+        }
+        
 
+    </style>
 </head>
 <body>
-    {% include 'chirp/_navbar.html' %}
+    <h1>Chirp</h1>
+    {% include 'posts/_navbar.html' %}
     {% block content %}
     {% endblock %}
 </body>

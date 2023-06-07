@@ -14,6 +14,10 @@ def signup(request):
         
     else:
         form = UserCreationForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'users/signup.html', context)
 
 def login(request):
     if request.method == 'POST':
@@ -23,8 +27,21 @@ def login(request):
             return redirect('home')
     else:
         form = AuthenticationForm()
+        context = {
+            'form': form
+        }
+        return render(request, 'users/login.html', context)
 
 
 def logout(request):
     auth.logout(request)
     return redirect('home')
+
+def profile(request, pk):
+    user = user.objects.get(pk=pk)
+    posts = posts.objects.filter(author=user).order_by('-date')
+    context = {
+        'user': user,
+        'posts': posts
+    }
+    return render(request, 'users/profile.html', context)

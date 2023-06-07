@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Chirp!
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        h1 { 
+            text-align: center;
+            font-family: 'Lucida Handwriting';
+            padding: .5rem;
+            color: #3399FF;
+        }
+        p {
+            text-align: center;
+           
+        }
+        .post_footer {
+            display: flex;
+            justify-content: space-between;
+            color: #66FFFF;
+        }
+        .created_at {
+            color: #0099FF;
+        }
+       
+       
+
+    </style>
+</head>
+<body>
+    <h1>Chirp</h1>
+    {% include 'posts/_navbar.html' %}
+    {% block content %}
+    {% endblock %}
+    <div>
+        {% if request.user.is_authenticated %}
+        <form action="{% url 'post-create' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="title" placeholder="Title">
+            <input type="text" name="content" placeholder="Content">
+            <button type="submit">Create</button>
+        </form>
+        {% endif %}
+        <div class='container'>
+        {% for post in posts %}
+        <article>
+            <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+            <p>{{ post.content }}</p>
+            <div class ="post_footer">
+            <a href="{% url 'profile' post.author.id %}">{{ post.author }}</a>
+            <p class="created_at">{{ post.created_at }}</p>
+        </article>
+        {% empty %}
+        <p>No posts yet</p>
+        {% endfor %}
+    </div>
+
+    </div>
+</body>
+</html>
