@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'todos/_head.html' with title='Todo App' %}
+<body>
+
+    {% include 'todos/_navbar.html' %}
+
+    <h1>Todo App</h1>
+
+    {% if request.user.is_authenticated %}
+    <h3>Hello {{request.user.username}}</h3>
+    {% endif %}
+
+    <form action="{% url 'create_todo'%}" method="post">
+        {% csrf_token %}
+        <input type="text" name="text" placeholder="Todo:">
+        <select name="priority">
+            {% for priority in priorities %}
+            <option value="{{priority.id}}">{{priority.text}}</option>
+            {% endfor %}
+        </select>
+        <button>Add</button>
+    </form>
+    {% for todo in todos%}
+    <p>{{todo.text}}</p>
+    <p>Created: {{todo.created_at}}</p>
+    <p>Priority: {{ todo.priority.text}}</p>
+    {% endfor%}   
+    
+    <a href"{% url 'logout'%}"> logout</a>
+</body>
+</html>

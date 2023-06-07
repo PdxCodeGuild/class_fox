@@ -1,0 +1,16 @@
+{% extends 'pokemon/base.html' %}
+
+{% block title %}
+Signup
+{% endblock %}
+
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>signup</button>
+    <a href="">or login</a>
+    
+</form>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'pokemon/base.html' %}
+
+{% block title %}
+Pokemon!!
+{% endblock %}
+
+{% block content %}
+
+<form action="{% url 'add_pokemon' %}" method="POST">
+    {% csrf_token %}
+
+        <div class ="poke-container">
+            {% for poke in pokemon %}
+            <div>
+                
+                <a href="{% url 'pokemon_detail' poke.id %}">
+                    <h3>{{poke.number}} - {{poke.name}}</h3>
+                </a>
+            <img src="{{ poke.image_url}}" alt="{{poke.name}}">
+            <div>
+                {% for types in poke.types.all %}
+                <p>{{ types.name }}</p>
+                {% endfor %}
+            </div>
+            <label>
+                Select:
+                <input type="checkbox" name="selected-pokemon" value="{{poke.id}}">
+            </label>
+        </div>
+        {% endfor %}
+    </div>
+    <select name="selected-team">
+        {% for team in request.user.team_set.all %}
+            <option value="{{team.id}}">{{team.name}}</option>
+        {% endfor %}
+    </select>
+    <button>Add Pokemom</button>
+</form>
+    
+{% endblock %}
+

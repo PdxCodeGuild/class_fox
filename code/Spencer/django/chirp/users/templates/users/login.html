@@ -1,0 +1,16 @@
+{% extends 'posts/base.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>login</button>
+    <a href="">or signup</a>
+    
+</form>
+{% endblock %}
