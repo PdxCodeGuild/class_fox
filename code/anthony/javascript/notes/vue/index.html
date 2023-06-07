@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div id="number-to-phrase">
+        <input v-model="number" type="number" min="0" max="99">
+        <button @click="convertToPhrase">convert</button>
+        <p>{{phrase}}</p>
+    </div>
+
+    <hr>
+
+    <div id="app">
+        <input type="text" v-model="className">
+        Hello class {{className}}
+        <input type="color" v-model="bgColor">
+        <button v-on:click="changeBG">Change background</button>
+        <ul>
+            <li v-for="day in daysOfWeek">{{day}}</li>
+        </ul>
+        <p v-if="isSunny">Go for a walk!</p>
+        <p v-else>Enjoy a nice book</p>
+    </div>
+</body>
+</html>
