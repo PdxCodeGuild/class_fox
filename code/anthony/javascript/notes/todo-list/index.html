@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- Vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js" integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Main -->
+    <script defer src="main.js"></script>
+    <!-- Pico css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <!-- Nunito + PT Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'PT Sans', sans-serif;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #def9fd;
+        }
+        .bg-primary {
+            background-color: #f8a59b;
+        }
+        .bg-secondary {
+            background-color: #f6fdfe;
+        }
+        .primary {
+            color: #f8a59b;
+            border: 1px solid #f8a59b;
+        }
+    </style>
+</head>
+<body>
+    <div id="todoList" class="container">
+        <form v-on:submit.prevent="addTodo">
+            <input v-model="todoName" type="text" placeholder="Todo:">
+            <button>Add</button>
+        </form>
+        <article v-for="(todo, index) in todoList">
+            <div v-if="index !== editingIndex">
+                <input type="checkbox">
+                <p>{{todo}}</p>
+                <a class="outline primary" role="button" href="#" @click="editTodo(index)">Edit</a>
+                <a class="outline secondary" role="button" href="#" @click="deleteTodo(index)">Delete</a>
+            </div>
+            <div v-else>
+                <input type="text" v-model="todoList[index]">
+                <a href="#" @click="doneEditing">Save</a>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
