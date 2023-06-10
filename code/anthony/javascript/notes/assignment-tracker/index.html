@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Tracker</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <p>{{greeting}}</p>
+        <form v-on:submit.prevent="addAssignment">
+            <input v-model="name" type="text" placeholder="Assignment name">
+            <input v-model="grade" type="number" placeholder="Grade" min="0" max="100">
+            <button>Add</button>
+        </form>
+        <p>Average: {{average}}</p>
+        <ul>
+            <li v-for="(item, index) in assignments">
+                {{item.grade}} - {{item.name}}
+                <button @click="removeItem(index)">&times;</button>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
