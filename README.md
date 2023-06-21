@@ -37,7 +37,8 @@ Presentation Day: July 14, 2023
 | 01B   | Pick 3    | 10           |  26 May       | 01 Jun   |  08 Jun            |
 | 02B   | Pick 3    | 10           |  26 May       | 01 Jun   |  08 Jun            |
 | 03B   | Pick 3    | 10           |  26 May       | 01 Jun   |  08 Jun            |
-| Group | Todo List | 10           |               |          |                    |
+| 4     | API       | 10           |  01 Jun       | 05 Jun   |  12 Jun            |
+| Group | Todo List | 10           |  06 Jun       | 07 Jun   |  14 Jun            |
 
 ## Django Labs Assigned:
 
